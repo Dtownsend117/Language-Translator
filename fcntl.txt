@@ -1,0 +1,26 @@
+How to build and install the fcntl python file
+Why is this needed?
+Windows (at least on my system) for some reason doesn't install the 'langdetect' PIP package so the fcntl python file is needed to kind 'bypass' the issue
+
+Step 1.) paste the code in a text editor and save it as "fcntl.py"
+
+def fcntl(fd, op, arg=0):
+    return 0
+        
+def ioctl(fd, op, arg=0, mutable_flag=True):
+    if mutable_flag:
+        return 0
+    else:
+        return ""
+    
+def flock(fd, op):
+    return
+        
+def lockf(fd, operation, length=0, start=0, whence=0):
+    return
+
+Step 2.) Place the file in the 'site-packages' folder in the python directory
+The folder should be located here:
+C:\Users\USERNAME\AppData\Local\Programs\Python\Python313\Lib\site-packages
+
+Now you should be able to install the langdetect PIP package
