@@ -2,9 +2,9 @@
 A python module that can be used to translate a variety of languages
 There are a few things needed to be done before you can use this module:
 -Create the fcntl python file and place it in the directory (refere to the fcntl.txt file)
--Install the googletrans pip package
+-Install the googletrans, translate, and langdetect pip package
 
-
+This module will not only translate languages, but give you the option to view the supported languages
 
 
 So far these are the supported languages (106): (along with the language code)
