@@ -1,49 +1,52 @@
 # Language-Translator
-A python module that can be used to translate a variety of languages
-There are a few things needed to be done before you can use this module:
--Create the fcntl python file and place it in the directory (refere to the fcntl.txt file)
--Install the googletrans, translate, and langdetect pip package
+A Python module that can be used to translate a variety of languages
+There are a few things that need to be done before you can use this module:
+-Create the fcntl python file and place it in the directory (refer to the fcntl.txt file)
+-Install the following PIP packages:
+googletrans, translate, langdetect, asyncio, speech_recognition, pyttsx3, re
 
-This module will not only translate languages, but give you the option to view the supported languages
+IMPORTANT!!
+There is currently an issue where if you say a phrase that contains more than one iteration of "to" the translator will make an error because it hears that as you are trying to translate to a non-existent language
+Example: You say " Translate welcome TO my house to Spanish", instead of translating to Spanish, it will try to translate it to "my house to Spanish.
 
-
+This module will not only translate languages but also give you the option to view the supported languages
 So far these are the supported languages (106): (along with the language code)
-# af: afrikaans
-# sq: albanian
-# am: amharic
-# ar: arabic
-# hy: armenian
-# az: azerbaijani
+# af: Afrikaans
+# sq: Albanian
+# am: Amharic
+# ar: Arabic
+# hy: Armenian
+# az: Azerbaijani
 # eu: basque
-# be: belarusian
-# bn: bengali
-# bs: bosnian
-# bg: bulgarian
-# ca: catalan
-# ceb: cebuano
-# ny: chichewa
-# zh-cn: chinese (simplified)
-# zh-tw: chinese (traditional)
-# co: corsican
-# hr: croatian
-# cs: czech
+# be: Belarusian
+# bn: Bengali
+# bs: Bosnian
+# bg: Bulgarian
+# ca: Catalan
+# ceb: Cebuano
+# ny: Chichewa
+# zh-cn: Chinese (simplified)
+# zh-tw: Chinese (Traditional)
+# co: Corsican
+# hr: Croatian
+# cs: Czech
 # da: danish
 # nl: dutch
-# en: english
-# eo: esperanto
-# et: estonian
-# tl: filipino
-# fi: finnish
+# en: English
+# eo: Esperanto
+# et: Estonian
+# tl: Filipino
+# fi: Finnish
 # fr: french
-# fy: frisian
-# gl: galician
-# ka: georgian
+# fy: Frisian
+# gl: Galician
+# ka: Georgian
 # de: german
 # el: greek
-# gu: gujarati
-# ht: haitian creole
-# ha: hausa
-# haw: hawaiian
+# gu: Gujarati
+# ht: Haitian Creole
+# ha: Hausa
+# haw: Hawaiian
 # iw: hebrew
 # he: hebrew
 # hi: hindi
@@ -61,57 +64,57 @@ So far these are the supported languages (106): (along with the language code)
 # km: khmer
 # ko: korean
 # ku: kurdish (kurmanji)
-# ky: kyrgyz
+# ky: Kyrgyz
 # lo: lao
-# la: latin
-# lv: latvian
-# lt: lithuanian
-# lb: luxembourgish
-# mk: macedonian
-# mg: malagasy
-# ms: malay
-# ml: malayalam
-# mt: maltese
-# mi: maori
-# mr: marathi
-# mn: mongolian
-# my: myanmar (burmese)
-# ne: nepali
-# no: norwegian
+# la: Latin
+# lv: Latvian
+# lt: Lithuanian
+# lb: Luxembourgish
+# mk: Macedonian
+# mg: Malagasy
+# ms: Malay
+# ml: Malayalam
+# mt: Maltese
+# mi: Maori
+# mr: Marathi
+# mn: Mongolian
+# my: Myanmar (Burmese)
+# ne: Nepali
+# no: Norwegian
 # or: odia
-# ps: pashto
-# fa: persian
+# ps: Pashto
+# fa: Persian
 # pl: polish
-# pt: portuguese
-# pa: punjabi
-# ro: romanian
-# ru: russian
-# sm: samoan
-# gd: scots gaelic
-# sr: serbian
-# st: sesotho
-# sn: shona
-# sd: sindhi
-# si: sinhala
-# sk: slovak
-# sl: slovenian
-# so: somali
-# es: spanish
-# su: sundanese
-# sw: swahili
-# sv: swedish
-# tg: tajik
-# ta: tamil
-# te: telugu
-# th: thai
-# tr: turkish
-# uk: ukrainian
+# pt: Portuguese
+# pa: Punjabi
+# ro: Romanian
+# ru: Russian
+# sm: Samoan
+# gd: Scots Gaelic
+# sr: Serbian
+# st: Sesotho
+# sn: Shona
+# sd: Sindhi
+# si: Sinhala
+# sk: Slovak
+# sl: Slovenian
+# so: Somali
+# es: Spanish
+# su: Sundanese
+# sw: Swahili
+# sv: Swedish
+# tg: Tajik
+# ta: Tamil
+# te: Telugu
+# th: Thai
+# tr: Turkish
+# uk: Ukrainian
 # ur: urdu
-# ug: uyghur
-# uz: uzbek
-# vi: vietnamese
+# ug: Uyghur
+# uz: Uzbek
+# vi: Vietnamese
 # cy: welsh
-# xh: xhosa
-# yi: yiddish
-# yo: yoruba
-# zu: zulu
+# xh: Xhosa
+# yi: Yiddish
+# yo: Yoruba
+# zu: Zulu
